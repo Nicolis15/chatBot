@@ -1,4 +1,4 @@
-import Cabecera from "../Components/Cabecera"
+import Cabecera from "../Components/Principal/Cabecera"
 
 
 export function Principal(){
