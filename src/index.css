@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-
+  --color-prymary: #34656D;
+  --color-secundary: #FAF8F1;
   --font-code: 'CourierPrime-Regular', sans-serif;
   --font-code-bold: 'CourierPrime-Bold', sans-serif;
   
