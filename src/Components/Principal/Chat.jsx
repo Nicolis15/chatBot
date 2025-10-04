@@ -1,3 +1,4 @@
+import logoPerfil from '../../assets/Perfil.jpg'
 import { useState, useEffect, useRef } from "react";
 
 export default function Chat() {
@@ -6,7 +7,7 @@ export default function Chat() {
       id: 1,
       sender: "bot",
       text: "¡Hola! fui desarrollado por Nicolas Lis Cruz👋 ¿En qué puedo ayudarte hoy?",
-      avatar: "https://i.pravatar.cc/40?img=5",
+      avatar: logoPerfil,
     },
     {
       id: 2,
@@ -54,7 +55,7 @@ export default function Chat() {
                 <img
                     src={msg.avatar}
                     alt="avatar"
-                    className="w-10 h-10 rounded-full"
+                    className="w-10 h-10 rounded-full object-cover"
                 />
                 )}
 
@@ -74,7 +75,7 @@ export default function Chat() {
                 <img
                     src={msg.avatar}
                     alt="avatar"
-                    className="w-10 h-10 rounded-full"
+                    className="w-10 h-10 rounded-full object-cover"
                 />
                 )}
             </div>
