@@ -1,20 +1,20 @@
 import logoPerfil from '../../assets/Perfil.jpg';
 import { useState, useEffect, useRef } from "react";
 import ChatService from '../../Services/ChatService';
-import ReactMarkdown from "react-markdown"; // 👈 Agregado
+import ReactMarkdown from "react-markdown";
 
 export default function Chat() {
     const [messages, setMessages] = useState([
         {
             id: 1,
             sender: "bot",
-            text: "¡Hola! fui desarrollado por Nicolas Lis Cruz👋 ¿En qué puedo ayudarte hoy?",
+            text: "¡Hola! soy Nicolas Lis Cruz, soy Desarrollador de Software e Ingeniero de Datos👋 ¿En qué puedo ayudarte hoy?",
             avatar: logoPerfil,
         },
         {
             id: 2,
             sender: "user",
-            text: "Hola 😄, quiero saber más sobre el proyecto.",
+            text: "",
             avatar: "https://i.pravatar.cc/40?img=3",
         },
     ]);
@@ -82,8 +82,8 @@ export default function Chat() {
 
                         <div
                             className={`max-w-[70%] p-3 rounded-2xl shadow-sm prose ${msg.sender === "user"
-                                    ? "bg-blue-600 text-white rounded-br-none prose-invert"
-                                    : "bg-white text-gray-800 rounded-bl-none"
+                                ? "bg-blue-600 text-white rounded-br-none prose-invert"
+                                : "bg-white text-gray-800 rounded-bl-none"
                                 }`}
                         >
                             <ReactMarkdown>{msg.text}</ReactMarkdown>

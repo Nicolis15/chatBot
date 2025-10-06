@@ -7,4 +7,5 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss()],
+    base: "https://Nicolis15.github.io/chatBot",
 })
